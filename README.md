@@ -1,11 +1,11 @@
 
 ## React Tinder Cards
 
-This project is an extension of an example from 'react-gesture'. It is a re-imagined concept of swiping at tinder profiles.
+This project uses 'react-spring' and 'react-gesture libraries and is an extension of an example from the 'react-gesture' page. It is a re-imagined concept of swiping at tinder cards.
 
 ### Preview
 
-
+![](tinder.gif)
 
 ### Demo
 
