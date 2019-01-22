@@ -9,7 +9,6 @@ Images are from Unsplash.
 
 https://tinder-cards.firebaseapp.com
 
-https://codepen.io/GavBarosee/pen/NoPGZN
 
 
 ### Preview
