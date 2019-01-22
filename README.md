@@ -3,9 +3,13 @@
 
 This project uses 'react-spring' and 'react-gesture libraries and is an extension of an example from the 'react-gesture' page. It is a re-imagined concept of swiping at tinder cards.
 
+Images are from Unsplash.
+
 ### Demo
 
 https://tinder-cards.firebaseapp.com
+
+https://codepen.io/GavBarosee/pen/NoPGZN
 
 
 ### Preview
