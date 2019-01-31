@@ -21,7 +21,6 @@ class Card extends React.Component {
           {...bind(i)}
           style={{
             transform: interpolate([rot, scale], trans)
-            // backgroundImage: `url(${cards[i]})`
           }}
         >
           <div className="card">
