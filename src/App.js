@@ -1,10 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Deck from "./components/Deck";
 
-class App extends Component {
-  render() {
-    return <Deck />;
-  }
-}
+const App = () => <Deck />;
 
 export default App;
