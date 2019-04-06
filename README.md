@@ -27,6 +27,11 @@ npm install
 npm start
 ```
 
+## Usage
+
+To add a new card, simply change the `data.js` file and populate the array with a new object.
+Be sure to provide an image url for the `pics` key and fill the `name`, `age`, `distance` and `text` keys as well.
+
 ## Acknowledgements
 
 [1]: https://github.com/react-spring
