@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { animated, interpolate } from "react-spring/hooks";
 import Carousel from "nuka-carousel";
 
@@ -25,8 +26,8 @@ class Card extends React.Component {
         >
           <div className="card">
             <Carousel>
-              {pics.map(pic => (
-                <img src={pic} alt="profilePicture" />
+              {pics.map((pic, index) => (
+                <img src={pic} key={index} alt="profilePicture" />
               ))}
             </Carousel>
             <h2>{name},</h2>
@@ -39,5 +40,23 @@ class Card extends React.Component {
     );
   }
 }
+
+Card.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  distance: PropTypes.string,
+  text: PropTypes.string,
+  pics: PropTypes.array
+};
+
+Card.defaultProps = {
+  name: "Jane Doe",
+  age: 18,
+  distance: "1 mile away",
+  text: "Random text for Jane Doe",
+  pics: [
+    "https://argylewinery.com/wp-content/uploads/2017/07/female-placeholder.png"
+  ]
+};
 
 export default Card;
