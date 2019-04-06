@@ -1,12 +1,13 @@
 export default [
   {
     pics: [
-      "https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+      "https://images.unsplash.com/photo-1537181941066-7d2de61a44a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     ],
-    name: "Helen",
-    age: 19,
-    distance: "3 miles away",
-    text: "Aspiring MILF"
+    name: "Heather",
+    age: 32,
+    distance: "4 miles away",
+    text:
+      "My nickname is Gilette because I'm the best a man can get. Also I will cut you."
   },
   {
     pics: [
@@ -19,13 +20,12 @@ export default [
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1535378719329-f0a8b9a42152?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+      "https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
     ],
-    name: "Sarah",
-    age: 24,
-    distance: "5 miles away",
-    text:
-      "It's tough being a single mom. Or so I'm told, I wouldn't know; I don't have kids."
+    name: "Helen",
+    age: 19,
+    distance: "3 miles away",
+    text: "Aspiring MILF"
   },
   {
     pics: [
