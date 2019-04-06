@@ -1,6 +1,15 @@
 export default [
   {
     pics: [
+      "https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+    ],
+    name: "Helen",
+    age: 28,
+    distance: "3 miles away",
+    text: "Aspiring MILF"
+  },
+  {
+    pics: [
       "https://images.unsplash.com/photo-1522263842439-347f062b8475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
     ],
     name: "Chloe",
