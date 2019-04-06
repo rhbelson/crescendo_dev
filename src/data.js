@@ -1,7 +1,7 @@
 export default [
   {
     pics: [
-      "https://images.unsplash.com/photo-1537181941066-7d2de61a44a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "https://images.unsplash.com/photo-1520024146169-3240400354ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
     ],
     name: "Heather",
     age: 32,
