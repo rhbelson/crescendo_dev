@@ -4,8 +4,8 @@ import Carousel from "nuka-carousel";
 
 class Card extends React.Component {
   render() {
-    const { i, x, y, rot, scale, trans, cards, bind, objs } = this.props;
-    const { name, age, distance, text, pics } = objs[i];
+    const { i, x, y, rot, scale, trans, bind, data } = this.props;
+    const { name, age, distance, text, pics } = data[i];
 
     return (
       <animated.div
