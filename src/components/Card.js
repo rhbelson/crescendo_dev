@@ -49,14 +49,4 @@ Card.propTypes = {
   pics: PropTypes.array
 };
 
-Card.defaultProps = {
-  name: "Jane Doe",
-  age: 18,
-  distance: "1 mile away",
-  text: "Random text for Jane Doe",
-  pics: [
-    "https://argylewinery.com/wp-content/uploads/2017/07/female-placeholder.png"
-  ]
-};
-
 export default Card;
