@@ -1,50 +1,49 @@
 export default [
   {
     pics: [
-      "https://images.unsplash.com/photo-1520024146169-3240400354ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+      "https://www.rollingstone.com/wp-content/uploads/2018/09/180803_RollingStone_noname0257_3.jpg"
     ],
-    name: "Heather",
-    age: 32,
+    name: "Noname",
+    age: "artist",
     distance: "4 miles away",
     text:
-      "My nickname is Gilette because I'm the best a man can get. Also I will cut you."
+      "hip-hop; chill rap; conscious rap"
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1522263842439-347f062b8475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      "https://media1.fdncms.com/chicago/imager/u/original/65088834/la-vangogh-1.jpg"
     ],
-    name: "Chloe",
-    age: 18,
+    name: "L.A VanGogh",
+    age: "artist",
     distance: "1 mile away",
-    text: "The C and the L are silent."
+    text: "hip-hop; chill rap; conscious rap"
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1539758462369-43adaa19bc1f?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
+      "https://static1.squarespace.com/static/55664553e4b0e48846329dc0/t/5bb635b4b208fc90b113ce11/1538667982255/Image+from+iOS.jpg"
     ],
-    name: "Helen",
-    age: 19,
+    name: "Ness Heads",
+    age: "artist",
     distance: "3 miles away",
-    text: "Aspiring MILF"
+    text: "hip-hop; pop"
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1514924801778-1db0aba75e9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      "http://www.lh-st.com/assets/root/images/artist/lhst/1125_ChaiTulaniSITE.jpg"
     ],
-    name: "Savannah",
-    age: 29,
+    name: "Chai Tulani",
+    age: "artist",
     distance: "3 miles away",
-    text: "A little known fact is that I cover about 40% of Africa."
+    text: "Afrobeat; hip-hop; pop"
   },
   {
     pics: [
-      "https://images.unsplash.com/photo-1456885284447-7dd4bb8720bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
-      "https://images.unsplash.com/photo-1532635270-c09dac425ca9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      "https://www.pinknews.co.uk/images/2018/08/Five-up-and-coming-artists.00_00_06_01.Still007-650x366.jpg"
     ],
-    name: "Jane",
-    age: 22,
+    name: "CJ Run",
+    age: "artist",
     distance: "2 miles away",
     text:
-      "On the first date I will carve our initials in a tree. It's the most romantic way to let you know I have a knife."
+      "hip-hop; electronic; alternative"
   }
 ];
