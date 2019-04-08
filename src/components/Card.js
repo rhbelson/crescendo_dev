@@ -6,7 +6,7 @@ import Carousel from "nuka-carousel";
 class Card extends React.Component {
   render() {
     const { i, x, y, rot, scale, trans, bind, data } = this.props;
-    const { name, age, distance, text, pics } = data[i];
+    const { name, tags, distance, text, pics } = data[i];
 
     return (
       <animated.div
@@ -30,8 +30,8 @@ class Card extends React.Component {
                 <img src={pic} key={index} alt="profilePicture" />
               ))}
             </Carousel>
-            <h2>{name},</h2>
-            <h2>{age}</h2>
+            <h2>{name}</h2>
+            <h2>{tags}</h2>
             <h5>{distance}</h5>
             <h5>{text}</h5>
           </div>

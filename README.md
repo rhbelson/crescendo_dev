@@ -2,7 +2,7 @@
 
 ## Acknowledgements
 
-[1]: https://github.com/react-spring
-[2]: https://github.com/drcmda
-[3]: https://github.com/rhbelson/Crescendo
+https://github.com/react-spring
+https://github.com/drcmda
+https://github.com/rhbelson/Crescendo
 
