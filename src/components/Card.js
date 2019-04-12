@@ -26,7 +26,7 @@ class Card extends React.Component {
 
   render() {
     const { i, x, y, rot, scale, trans, bind, data } = this.props;
-    const { name, tags, distance, text, pics } = data[i];
+    const { name, tags, distance, text, pics, contact, bio } = data[i];
 
     return (
       <animated.div
@@ -60,14 +60,15 @@ class Card extends React.Component {
           </div>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
           <ModalBody>
-              <CardImg top style={{width:"100%"}} src={pics[0]}  />
+              <CardImg top style={{width:"70%",marginLeft:"15%"}} src={pics[0]}  />
               <CardBody>
                  <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>{name}</CardTitle>
                  <CardSubtitle style={{fontSize:"20px"}}><IoIosMusicalNote/>Artist</CardSubtitle>
                 <CardText>
-                  <p style={{marginTop:"5%"}}>Bio</p>
+                  <p style={{marginTop:"5%"}}>{bio}</p>
                   <a style={{fontWeight:"bold"}}>Next Show Near You: </a>
-                  <a>TBD </a>
+                  <a>TBD </a><br/>
+                  <SocialIcon url="http://twitter.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://instagram.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://soundcloud.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://spotify.com/"/>
                 </CardText>
                 <Button href={'https://mail.google.com/mail/?view=cm&fs=1&to=' + 'contact' + '&su=Crescendo+User+Inquiry&body=Thank+you+for+choosing+Crescendo!'} style={{width:"100%"}}>Contact {name}</Button>
               </CardBody>
@@ -81,6 +82,7 @@ class Card extends React.Component {
 
 Card.propTypes = {
   name: PropTypes.string,
+  bio: PropTypes.string,
   age: PropTypes.number,
   distance: PropTypes.string,
   text: PropTypes.string,
