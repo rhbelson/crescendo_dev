@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Deck from "./components/Deck";
-
-// const App = () => 
+// const App = () =>
 // <Deck />;
 
 class App extends Component {
