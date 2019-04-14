@@ -26,7 +26,6 @@ class App extends Component {
 
 	render() {
 		return(
-			// <Container style={{padding:"0px",display:"flex"}}>
 			// <Navbar style={{backgroundColor:"salmon"}}>
 	  //         <Col xs="4">
 	  //           <Button onClick={this.props.toggleSettings} style={{left:"0",backgroundColor:"#577399"}}><FaCog/></Button>
@@ -35,8 +34,7 @@ class App extends Component {
 	  //           <div style={{fontWeight:"bold",color:"#ffffff"}}>Crescendo</div>
 	  //         </Col>
 	  //       </Navbar> 
-	        <Deck/>
-	        // </Container>
+	  		<Deck/>
 	        
          );
 
