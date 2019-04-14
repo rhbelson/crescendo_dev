@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useSprings } from "react-spring/hooks";
 import { useGesture } from "react-with-gesture";
+import {Container, Navbar, NavbarBrand, Button, Col} from "reactstrap";
+import { FaCog} from 'react-icons/fa';
+import {IoIosStats} from "react-icons/io";
 
 import Card from "./Card";
 import data from "../data.js";

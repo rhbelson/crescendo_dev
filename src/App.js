@@ -26,16 +26,17 @@ class App extends Component {
 
 	render() {
 		return(
-			// <Navbar style={{backgroundColor:"salmon"}}>
-	  //         <Col xs="4">
-	  //           <Button onClick={this.props.toggleSettings} style={{left:"0",backgroundColor:"#577399"}}><FaCog/></Button>
-	  //         </Col>
-	  //         <Col xs="8">
-	  //           <div style={{fontWeight:"bold",color:"#ffffff"}}>Crescendo</div>
-	  //         </Col>
-	  //       </Navbar> 
-	  		<Deck/>
-	        
+      <React.Fragment>
+          <Navbar style={{backgroundColor:"salmon",position:"absolute",top:"0px"}}>
+            <Col xs="8">
+              <Button style={{left:"0",backgroundColor:"#577399"}}><FaCog/></Button>
+            </Col>
+            <Col xs="4">
+              <div style={{fontWeight:"bold",color:"#ffffff"}}>Crescendo</div>
+            </Col>
+          </Navbar> 
+	        <Deck/> 
+      </React.Fragment> 
          );
 
 	}

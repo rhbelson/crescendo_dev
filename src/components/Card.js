@@ -6,6 +6,7 @@ import ReactAudioPlayer from 'react-audio-player';
 import { SocialIcon } from 'react-social-icons';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import { IoIosMusicalNote } from "react-icons/io";
+import { FaCog} from 'react-icons/fa';
 
 class Card extends React.Component {
   constructor(props) {
@@ -44,16 +45,16 @@ class Card extends React.Component {
             transform: interpolate([rot, scale], trans)
           }}
         >
-          <div className="card" onClick={this.toggle}>
-            <Carousel>
+          <div className="card">
+           <Carousel>
               {pics.map((pic, index) => (
-                <img src={pic} key={index} alt="profilePicture" />
+                <img src={pic} key={index} alt="profilePicture" onClick={this.toggle} />
               ))}
             </Carousel>
             <h2 style={{marginLeft:"10%"}}>{name}</h2>
             <h5 style={{marginLeft:"10%"}}>{tags}</h5>
             <ReactAudioPlayer
-            style={{width:"100%"}}
+            style={{width:"80%",marginLeft:"5px"}}
                     src={"https://firebasestorage.googleapis.com/v0/b/crescendo-music2.appspot.com/o/Noname%20-%20Forever%20(ft.%20Ravyn%20Lenae%20and%20Joseph%20Chilliams).mp3?alt=media&token=4ed372fc-cf99-4c6b-a379-bb63ba273f5a"}
                     controls
                   />

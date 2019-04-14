@@ -27,7 +27,7 @@ body {
 }
 
 #root > div {
-  padding-top:120px;
+  padding-top:5px;
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -89,7 +89,7 @@ h5:last-of-type {
 }
 
 .card {
-  height: 540px !important;
+  height: 520px !important;
 }
 
 .slider-control-bottomcenter {
