@@ -4,15 +4,24 @@ import Deck from "./components/Deck";
 import {Container, Navbar, NavbarBrand, Button, Col} from "reactstrap";
 import { FaCog} from 'react-icons/fa';
 import {IoIosStats} from "react-icons/io";
-import { Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle, Dropdown, DropdownItem, DropdownToggle, DropdownMenu} from 'reactstrap';
 import Settings from "./Settings";
 import "./App.css";
 import {FaLocationArrow} from "react-icons/fa";
+import Select from 'react-select';
+
+const options = [
+  { value: 'chicago', label: 'Chicago' },
+  { value: 'losangeles', label: 'Los Angeles' },
+  { value: 'nyc', label: 'NYC' }
+];
 
 class App extends Component {
 	constructor(props) {
     	super(props);
       this.state = {
+      selectedOption: null,
+      dropdownOpen: false,
       smodal: false,
       backdrop: true,
       rapChecked: false,
@@ -25,6 +34,19 @@ class App extends Component {
       countryChecked: false,
     };
     this.toggle_settings = this.toggle_settings.bind(this);
+    this.toggle_dropdown = this.toggle_dropdown.bind(this);
+    this.handleChange=this.handleChange.bind(this);
+  }
+
+  handleChange(option) {
+    this.setState({ selectedOption: option });
+    console.log(`Option selected:`, option);
+  }
+
+  toggle_dropdown() {
+    this.setState(prevState => ({
+      dropdownOpen: !prevState.dropdownOpen
+    }));
   }
 
   toggle_settings() {
@@ -83,7 +105,7 @@ class App extends Component {
   }
 
 	render() {
-    const { loggedIn, toggledSettings, toggledStats, modal, username, artists, artistProfile, value, rapChecked, hipChecked, jazzChecked, classicalChecked, edmChecked, rockChecked, popChecked, countryChecked} = this.state;
+    const { selectedOption, loggedIn, toggledSettings, toggledStats, modal, username, artists, artistProfile, value, rapChecked, hipChecked, jazzChecked, classicalChecked, edmChecked, rockChecked, popChecked, countryChecked} = this.state;
 		return(
       [
           <Navbar style={{backgroundColor:"salmon",position:"absolute",top:"0px",zIndex:"1",width:"100%"}}>
@@ -110,10 +132,14 @@ class App extends Component {
                         countryChecked={countryChecked} setCountryChecked={this.setCountryChecked.bind(this)}/>
                     </CardText>
                     <CardSubtitle style={{fontWeight:"bold",fontSize:"120%"}}>
-                    Choose Region
+                    <FaLocationArrow style={{marginLeft:"10%",marginRight:"2%",backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"10px"}}/>Choose Region
                     </CardSubtitle>
                     <Container style={{backgroundColor:"#e8e8e8",borderRadius:"10px",marginTop:"2%",padding:"3px",width:"100%",display:"block",fontFamily:"Roboto"}}>
-                    <a style={{marginLeft:"9%"}}><FaLocationArrow style={{marginRight:"2%",backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>Choose Location</a>
+                    <Select
+        value={selectedOption}
+        onChange={this.handleChange}
+        options={options}
+      />
                     </Container>
                   </CardBody>
               </ModalBody>
