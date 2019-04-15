@@ -116,7 +116,7 @@ class App extends Component {
               <div style={{fontWeight:"bold",color:"#ffffff"}}>Crescendo</div>
             </Col>
             <Modal isOpen={this.state.smodal} toggle={this.toggle_settings} className={this.props.className}>
-            <ModalHeader style={{backgroundColor:"#FE3C72",color:"#fffff"}} toggle={this.toggle_settings}>Settings</ModalHeader>
+            <ModalHeader style={{backgroundColor:"#FE3C72",color:"#fffff"}} toggle={this.toggle_settings}><a style={{position:"relative",top:"2px"}}>Settings</a></ModalHeader>
               <ModalBody>
                   <CardBody>
                      <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"19px"}}>Select Your Music Preferences</CardTitle>
