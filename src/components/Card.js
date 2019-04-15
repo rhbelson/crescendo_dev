@@ -61,12 +61,12 @@ class Card extends React.Component {
           </div>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
           <ModalBody>
-              <CardImg top style={{width:"70%",marginLeft:"15%"}} src={pics[0]}  />
+              <CardImg top style={{width:"70%",height:"100%",marginLeft:"15%"}} src={pics[0]}  />
               <CardBody>
                  <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>{name}</CardTitle>
                  <CardSubtitle style={{fontSize:"20px"}}><IoIosMusicalNote/>Artist</CardSubtitle>
                 <CardText>
-                  <p style={{marginTop:"5%"}}>{bio}</p>
+                  <a style={{marginTop:"5%"}}>{bio}</a><br/>
                   <a style={{fontWeight:"bold"}}>Next Show Near You: </a>
                   <a>TBD </a><br/>
                   <SocialIcon url="http://twitter.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://instagram.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://soundcloud.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://spotify.com/"/>
