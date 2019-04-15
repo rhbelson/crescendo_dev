@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Switch from "react-switch";
+import {Container,Col,Row} from "reactstrap";
  
 class SwitchExample extends Component {
   constructor(props) {
@@ -15,14 +16,22 @@ class SwitchExample extends Component {
  
   render() {
     return (
-      <label htmlFor="normal-switch" style={{backgroundColor:"#e8e8e8",padding:"2%",marginRight:"1%",borderRadius:"5px"}}>
-        <span style={{verticalAlign:"top"}}>{this.state.name}</span>
-        <Switch
-          onChange={this.handleChange}
-          checked={this.state.checked}
-          id="normal-switch"
-        />
-      </label>
+      <Container style={{backgroundColor:"#e8e8e8",borderRadius:"10px",marginTop:"2%",padding:"3px",width:"100%",display:"block",fontFamily:"Roboto"}}>
+        <Row>
+        <Col xs="8">
+        <label htmlFor="normal-switch">
+          <span style={{marginLeft:"10px"}}>{this.state.name}</span>
+        </label>
+        </Col>
+        <Col xs="4" style={{verticalAlign:"top"}}>
+          <Switch
+            onChange={this.handleChange}
+            checked={this.state.checked}
+            id="normal-switch"
+          />
+        </Col>
+        </Row>
+      </Container>
     );
   }
 }

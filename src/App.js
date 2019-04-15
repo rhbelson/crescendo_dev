@@ -96,17 +96,17 @@ class App extends Component {
             <ModalHeader style={{backgroundColor:"#FE3C72",color:"#fffff"}} toggle={this.toggle_settings}>Settings</ModalHeader>
               <ModalBody>
                   <CardBody>
-                     <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>Select Your Music Preference</CardTitle>
+                     <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"19px"}}>Select Your Music Preferences</CardTitle>
                     <CardText>
                       <Settings 
-            rapChecked={rapChecked} setRapChecked={this.setRapChecked.bind(this)} 
-            hipChecked={hipChecked}  setHipChecked={this.setHipChecked.bind(this)} 
-            jazzChecked={jazzChecked} setJazzChecked={this.setHipChecked.bind(this)} 
-            classicalChecked={classicalChecked} setClassicalChecked={this.setClassicalChecked.bind(this)} 
-            edmChecked={edmChecked} setEDMChecked={this.setEDMChecked.bind(this)}
-            rockChecked={rockChecked} setRockChecked={this.setRockChecked.bind(this)}
-            popChecked={popChecked} setPopChecked={this.setPopChecked.bind(this)}
-            countryChecked={countryChecked} setCountryChecked={this.setCountryChecked.bind(this)}/>
+                        rapChecked={rapChecked} setRapChecked={this.setRapChecked.bind(this)} 
+                        hipChecked={hipChecked}  setHipChecked={this.setHipChecked.bind(this)} 
+                        jazzChecked={jazzChecked} setJazzChecked={this.setHipChecked.bind(this)} 
+                        classicalChecked={classicalChecked} setClassicalChecked={this.setClassicalChecked.bind(this)} 
+                        edmChecked={edmChecked} setEDMChecked={this.setEDMChecked.bind(this)}
+                        rockChecked={rockChecked} setRockChecked={this.setRockChecked.bind(this)}
+                        popChecked={popChecked} setPopChecked={this.setPopChecked.bind(this)}
+                        countryChecked={countryChecked} setCountryChecked={this.setCountryChecked.bind(this)}/>
                     </CardText>
                   </CardBody>
               </ModalBody>
