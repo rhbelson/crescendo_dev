@@ -136,15 +136,20 @@ class App extends Component {
                     </CardSubtitle>
                     <Container style={{backgroundColor:"#e8e8e8",borderRadius:"10px",marginTop:"2%",padding:"3px",width:"100%",display:"block",fontFamily:"Roboto"}}>
                     <Select
-        value={selectedOption}
-        onChange={this.handleChange}
-        options={options}
-      />
+                      value={selectedOption}
+                      onChange={this.handleChange}
+                      options={options}
+                    />
                     </Container>
+                    <Button onClick={this.toggle_settings} style={{marginLeft:"20%",marginTop:"2%",backgroundColor:"#FE3C72",color:"#fffff"}}>Save Changes</Button>
                   </CardBody>
               </ModalBody>
             </Modal>
           </Navbar>, 
+
+
+
+
 	        <Deck/> 
       ]
          );
