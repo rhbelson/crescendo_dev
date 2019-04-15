@@ -6,6 +6,7 @@ import { FaCog} from 'react-icons/fa';
 import {IoIosStats} from "react-icons/io";
 import { Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import Settings from "./Settings";
+import "./App.css";
 
 class App extends Component {
 	constructor(props) {
@@ -92,7 +93,7 @@ class App extends Component {
               <div style={{fontWeight:"bold",color:"#ffffff"}}>Crescendo</div>
             </Col>
             <Modal isOpen={this.state.smodal} toggle={this.toggle_settings} className={this.props.className}>
-            <ModalHeader toggle={this.toggle_settings}>Settings</ModalHeader>
+            <ModalHeader style={{backgroundColor:"#FE3C72",color:"#fffff"}} toggle={this.toggle_settings}>Settings</ModalHeader>
               <ModalBody>
                   <CardBody>
                      <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>Select Your Music Preference</CardTitle>
