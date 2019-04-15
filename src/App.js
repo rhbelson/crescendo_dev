@@ -7,6 +7,7 @@ import {IoIosStats} from "react-icons/io";
 import { Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import Settings from "./Settings";
 import "./App.css";
+import {FaLocationArrow} from "react-icons/fa";
 
 class App extends Component {
 	constructor(props) {
@@ -108,6 +109,12 @@ class App extends Component {
                         popChecked={popChecked} setPopChecked={this.setPopChecked.bind(this)}
                         countryChecked={countryChecked} setCountryChecked={this.setCountryChecked.bind(this)}/>
                     </CardText>
+                    <CardSubtitle style={{fontWeight:"bold",fontSize:"120%"}}>
+                    Choose Region
+                    </CardSubtitle>
+                    <Container style={{backgroundColor:"#e8e8e8",borderRadius:"10px",marginTop:"2%",padding:"3px",width:"100%",display:"block",fontFamily:"Roboto"}}>
+                    <a style={{marginLeft:"9%"}}><FaLocationArrow style={{marginRight:"2%",backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>Choose Location</a>
+                    </Container>
                   </CardBody>
               </ModalBody>
             </Modal>

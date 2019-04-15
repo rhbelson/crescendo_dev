@@ -2,8 +2,10 @@ import React, { PureComponent } from 'react';
 // import PropTypes from 'prop-types';
 import SwitchExample from './SwitchExample';
 import Typography from '@material-ui/core/Typography';
-
 //import { Test } from './Settings.styles';
+
+
+ // <SwitchExample name="Classical" settingChecked={classicalChecked} checked={this.checked.bind(this)}/>
 
 class Settings extends PureComponent { 
   constructor(props) {
@@ -55,7 +57,6 @@ class Settings extends PureComponent {
           <SwitchExample name="Rap" settingChecked={rapChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Hip Hop/R&B" settingChecked={hipChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Jazz" settingChecked={jazzChecked} checked={this.checked.bind(this)}/>
-          <SwitchExample name="Classical" settingChecked={classicalChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="EDM/House" settingChecked={edmChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Rock" settingChecked={rockChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Pop" settingChecked={popChecked} checked={this.checked.bind(this)}/>

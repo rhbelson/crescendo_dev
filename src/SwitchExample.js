@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Switch from "react-switch";
 import {Container,Col,Row} from "reactstrap";
-import {GiMicrophone,GiHeadphones,GiMusicalKeyboard} from "react-icons/gi";
+import {GiMicrophone,GiHeadphones,GiMusicalKeyboard,GiGuitar,GiSaxophone,GiOutbackHat,GiTrumpet} from "react-icons/gi";
 import {FaMusic} from "react-icons/fa";
  
 class SwitchExample extends Component {
@@ -26,7 +26,13 @@ class SwitchExample extends Component {
       return (<GiMusicalKeyboard style={{backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>);
     }
     if (this.state.name=="Jazz") {
-      return (<GiHeadphones style={{backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>);
+      return (<GiTrumpet style={{backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>);
+    }
+    if (this.state.name=="Rock") {
+      return (<GiGuitar style={{backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>);
+    }
+    if (this.state.name=="Country") {
+      return (<GiOutbackHat style={{backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>);
     }
     else {
       return (<FaMusic style={{backgroundColor:"#424242",fontSize:"200%",borderRadius:"40px",color:"white",padding:"5px"}}/>);
