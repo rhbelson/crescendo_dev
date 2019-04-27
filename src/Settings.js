@@ -54,12 +54,11 @@ class Settings extends PureComponent {
     return (
       <div className="SettingsWrapper" style={{margin: "auto,2%"}}>
         <div style={{marginTop:"2%",fontFamily: 'Roboto Slab, serif'}}>
-          <SwitchExample name="Rap" settingChecked={rapChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Hip Hop/R&B" settingChecked={hipChecked} checked={this.checked.bind(this)}/>
-          <SwitchExample name="Jazz" settingChecked={jazzChecked} checked={this.checked.bind(this)}/>
+          <SwitchExample name="Pop" settingChecked={popChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="EDM/House" settingChecked={edmChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Rock" settingChecked={rockChecked} checked={this.checked.bind(this)}/>
-          <SwitchExample name="Pop" settingChecked={popChecked} checked={this.checked.bind(this)}/>
+          <SwitchExample name="Jazz" settingChecked={jazzChecked} checked={this.checked.bind(this)}/>
           <SwitchExample name="Country" settingChecked={countryChecked} checked={this.checked.bind(this)}/>
         </div>
       </div>

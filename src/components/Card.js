@@ -27,7 +27,7 @@ class Card extends React.Component {
 
   render() {
     const { i, x, y, rot, scale, trans, bind, data } = this.props;
-    const { name, tags, distance, text, pics, contact, bio } = data[i];
+    const { name, tags, distance, text, pics, contact, bio,music } = data[i];
 
     return (
       <animated.div
@@ -55,13 +55,13 @@ class Card extends React.Component {
             <h5 style={{marginLeft:"10%",color:"#000000"}}>{tags}</h5>
             <ReactAudioPlayer
             style={{width:"80%",marginLeft:"5px"}}
-                    src={"https://firebasestorage.googleapis.com/v0/b/crescendo-music2.appspot.com/o/Noname%20-%20Forever%20(ft.%20Ravyn%20Lenae%20and%20Joseph%20Chilliams).mp3?alt=media&token=4ed372fc-cf99-4c6b-a379-bb63ba273f5a"}
+                    src={music}
                     controls
                   />
           </div>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
           <ModalBody>
-              <CardImg top style={{width:"70%",height:"50%",marginLeft:"15%"}} src={pics[0]}  />
+              <CardImg top style={{width:"70%",marginLeft:"15%"}} src={pics[0]}  />
               <CardBody>
                  <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>{name}</CardTitle>
                  <CardSubtitle style={{fontSize:"20px"}}><IoIosMusicalNote/>Artist</CardSubtitle>
