@@ -27,7 +27,7 @@ class Card extends React.Component {
 
   render() {
     const { i, x, y, rot, scale, trans, bind, data } = this.props;
-    const { name, tags, distance, text, pics, contact, bio,music } = data[i];
+    const { name, tags, distance, text, pics, contact, bio,music, spotify, instagram, soundcloud, facebook,twitter } = data[i];
 
     return (
       <animated.div
@@ -51,10 +51,10 @@ class Card extends React.Component {
                 <img src={pic} key={index} alt="profilePicture" onClick={this.toggle} />
               ))}
             </Carousel>
-            <h2 style={{marginLeft:"10%"}}>{name}</h2>
-            <h5 style={{marginLeft:"10%",color:"#000000"}}>{tags}</h5>
+            <h2 style={{marginLeft:"10%",marginTop:"4%"}}>{name}</h2>
+    
             <ReactAudioPlayer
-            style={{width:"80%",marginLeft:"5px"}}
+            style={{width:"90%",marginLeft:"3%"}}
                     src={music}
                     controls
                   />
@@ -64,12 +64,15 @@ class Card extends React.Component {
               <CardImg top style={{width:"70%",marginLeft:"15%"}} src={pics[0]}  />
               <CardBody>
                  <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>{name}</CardTitle>
-                 <CardSubtitle style={{fontSize:"20px"}}><IoIosMusicalNote/>Artist</CardSubtitle>
+                 <CardSubtitle style={{fontSize:"20px",marginBottom:"2%"}}><IoIosMusicalNote/>{tags}</CardSubtitle>
                 <CardText>
                   <a style={{marginTop:"5%"}}>{bio}</a><br/>
                   <a style={{fontWeight:"bold"}}>Next Show Near You: </a>
                   <a>TBD </a><br/>
-                  <SocialIcon url="http://twitter.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://instagram.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://soundcloud.com/"/><SocialIcon style={{marginLeft:"2%"}} url="http://spotify.com/"/>
+                  <SocialIcon url={twitter}/>
+                  <SocialIcon style={{marginLeft:"2%"}} url={instagram}/>
+                  <SocialIcon style={{marginLeft:"2%"}} url={soundcloud}/>
+                  <SocialIcon style={{marginLeft:"2%"}} url={spotify}/>
                 </CardText>
                 <Button href={'https://mail.google.com/mail/?view=cm&fs=1&to=' + 'contact' + '&su=Crescendo+User+Inquiry&body=Thank+you+for+choosing+Crescendo!'} style={{width:"100%"}}>Contact {name}</Button>
               </CardBody>
