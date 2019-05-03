@@ -31,6 +31,8 @@ function Deck() {
     from: from(i)
   }));
 
+
+
   const bind = useGesture(
     ({
       args: [index],
@@ -66,8 +68,13 @@ function Deck() {
 
       if (!down && gone.size === data.length)
         setTimeout(() => gone.clear() || set(i => to(i)), 600);
+      if (gone.size==1) 
+        console.log("1 swiped");
+        
+      
     }
   );
+
 
   return props.map(({ x, y, rot, scale }, i) => (
     <Card

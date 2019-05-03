@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { animated, interpolate } from "react-spring/hooks";
 import Carousel from "nuka-carousel";
 import ReactAudioPlayer from 'react-audio-player';
+import ReactPlayer from 'react-player';
 import { SocialIcon } from 'react-social-icons';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import { IoIosMusicalNote } from "react-icons/io";
@@ -51,17 +52,17 @@ class Card extends React.Component {
                 <img src={pic} key={index} alt="profilePicture" onClick={this.toggle} />
               ))}
             </Carousel>
-            <h2 style={{marginLeft:"10%",marginTop:"4%"}}>{name}</h2>
-    
+            <h2 style={{textAlign:"center",marginTop:"4%"}}>{name}</h2>
             <ReactAudioPlayer
             style={{width:"90%",marginLeft:"3%"}}
                     src={music}
                     controls
                   />
+            
           </div>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
-          <ModalBody>
-              <CardImg top style={{width:"70%",marginLeft:"15%"}} src={pics[0]}  />
+          <ModalBody onClick={this.toggle}>
+              <CardImg top style={{width:"70%",height:"40%",marginLeft:"15%"}} src={pics[0]}  />
               <CardBody>
                  <CardTitle style={{textAlign:"left",fontWeight:"bold",fontSize:"20px"}}>{name}</CardTitle>
                  <CardSubtitle style={{fontSize:"20px",marginBottom:"2%"}}><IoIosMusicalNote/>{tags}</CardSubtitle>
@@ -70,6 +71,7 @@ class Card extends React.Component {
                   <a style={{fontWeight:"bold"}}>Next Show Near You: </a>
                   <a>TBD </a><br/>
                   <SocialIcon url={twitter}/>
+                  <SocialIcon style={{marginLeft:"2%"}} url={facebook}/>
                   <SocialIcon style={{marginLeft:"2%"}} url={instagram}/>
                   <SocialIcon style={{marginLeft:"2%"}} url={soundcloud}/>
                   <SocialIcon style={{marginLeft:"2%"}} url={spotify}/>
