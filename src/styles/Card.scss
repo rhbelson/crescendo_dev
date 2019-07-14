@@ -12,9 +12,14 @@
   }
 }
 
-
 .audioPlayer {
-  position: relative;
-  left: -.65rem;
-  width: 80%;
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .audioPlayer {
+    position: relative;
+    left: -.65rem;
+    width: 80%;
+  }
 }
