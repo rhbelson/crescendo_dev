@@ -48,7 +48,7 @@ class Card extends React.Component {
           }}
         >
           <div className="card">
-           <Carousel className='artistImage'>
+           <Carousel>
               {pics.map((pic, index) => (
                 <img src={pic} key={index} alt="profilePicture" onClick={this.toggle} />
               ))}
