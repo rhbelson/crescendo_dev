@@ -7,7 +7,8 @@ import ReactPlayer from 'react-player';
 import { SocialIcon } from 'react-social-icons';
 import {Button, Modal, ModalHeader, ModalBody, ModalFooter,CardImg, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap';
 import { IoIosMusicalNote } from "react-icons/io";
-import { FaCog} from 'react-icons/fa';
+import { FaCog } from 'react-icons/fa';
+import styles from '../styles/Card.scss';
 
 class Card extends React.Component {
   constructor(props) {
@@ -52,13 +53,10 @@ class Card extends React.Component {
                 <img src={pic} key={index} alt="profilePicture" onClick={this.toggle} />
               ))}
             </Carousel>
-            <h2 style={{textAlign:"center",marginTop:"4%"}}>{name}</h2>
-            <ReactAudioPlayer
-            style={{width:"90%",marginLeft:"3%"}}
-                    src={music}
-                    controls
-                  />
-            
+            <div className='cardInfo'>
+              <h2 className='name'> {name} </h2>
+              <ReactAudioPlayer className='audioPlayer' src={music} controls />
+            </div>
           </div>
           <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
           <ModalBody onClick={this.toggle}>

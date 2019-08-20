@@ -14,7 +14,7 @@ h5:last-of-type {
   background-color: #333;
   float: left;
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+          animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
 .sk-cube-grid .sk-cube1 {
   -webkit-animation-delay: 0.2s;
@@ -50,7 +50,7 @@ h5:last-of-type {
             transform: scale3D(1, 1, 1);
   } 35% {
     -webkit-transform: scale3D(0, 0, 1);
-            transform: scale3D(0, 0, 1); 
+            transform: scale3D(0, 0, 1);
   }
 }
 
@@ -61,5 +61,33 @@ h5:last-of-type {
   } 35% {
     -webkit-transform: scale3D(0, 0, 1);
             transform: scale3D(0, 0, 1);
-  } 
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  padding: 45px;
+
+  .headerTitle {
+      font-weight: bold;
+      color: #fff;
+      margin-top: .5rem;
+  }
+
+  .settings {
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+
+}
+
+.content {
+  margin-top: -100px;
 }

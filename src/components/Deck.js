@@ -31,8 +31,6 @@ function Deck() {
     from: from(i)
   }));
 
-
-
   const bind = useGesture(
     ({
       args: [index],
@@ -43,20 +41,16 @@ function Deck() {
       velocity
     }) => {
       const trigger = velocity > 0.2;
-
       const dir = xDir < 0 ? -1 : 1;
-
       if (!down && trigger) gone.add(index);
 
       set(i => {
         if (index !== i) return;
         const isGone = gone.has(index);
-
         const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0;
-
         const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0);
-
         const scale = down ? 1.1 : 1;
+
         return {
           x,
           rot,
@@ -68,10 +62,8 @@ function Deck() {
 
       if (!down && gone.size === data.length)
         setTimeout(() => gone.clear() || set(i => to(i)), 600);
-      if (gone.size==1) 
+      if (gone.size==1)
         console.log("1 swiped");
-        
-      
     }
   );
 
